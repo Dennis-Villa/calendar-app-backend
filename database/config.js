@@ -4,7 +4,7 @@ const dbConnection = async() => {
 
     try {
 
-        await mongoose.connect('mongodb+srv://MERN_USER:hukXvHKIoWU3YGMo@cluster0.rwr7o3q.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp');
+        await mongoose.connect(process.env.DB_CNN);
 
         console.log('DB Online');
     
